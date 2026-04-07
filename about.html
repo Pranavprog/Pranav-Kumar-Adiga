@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav Kumar | Aspiring AI Engineer</title>
+    <link rel="stylesheet" href="styles-about.css">
+
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Modern Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Chart.js for Data Visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <!-- Cloud Dashboard Container -->
+    <div class="dashboard-container">
+        <!-- Header Section -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <div class="header-left">
+                    <div class="profile-section">
+                        <div class="avatar-container">
+                            <img src="image/pranav-profile.png" alt="Pranav Kumar" class="profile-avatar">
+                            <div class="status-indicator online"></div>
+                        </div>
+                        <div class="profile-info">
+                            <h1 class="profile-name">Pranav Kumar</h1>
+                            <p class="profile-title">Aspiring AI Engineer</p>
+                            <div class="profile-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Mysuru, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="2">2</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="15">10</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="15">18</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <a href="mailto:pranavkumar9535@gmail.com" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Contact Me
+                        </a>
+                        <a href="index.html" class="btn btn-secondary">
+                            <i class="fas fa-terminal"></i>
+                            Terminal View
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Dashboard Content -->
+        <main class="dashboard-main">
+            <!-- Navigation Tabs -->
+            <nav class="dashboard-nav">
+                <div class="nav-tabs">
+                    <button class="nav-tab active" data-tab="overview">
+                        <i class="fas fa-tachometer-alt"></i>
+                        Overview
+                    </button>
+                    <button class="nav-tab" data-tab="experience">
+                        <i class="fas fa-briefcase"></i>
+                        Experience
+                    </button>
+                    <button class="nav-tab" data-tab="skills">
+                        <i class="fas fa-code"></i>
+                        Skills
+                    </button>
+                    <button class="nav-tab" data-tab="projects">
+                        <i class="fas fa-project-diagram"></i>
+                        Projects
+                    </button>
+                    <button class="nav-tab" data-tab="education">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </button>
+                    <button class="nav-tab" data-tab="awards">
+                        <i class="fas fa-trophy"></i>
+                        Awards
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Overview Tab -->
+                <div class="tab-pane active" id="overview">
+                    <div class="dashboard-grid">
+                        <!-- About Me Card -->
+                        <div class="dashboard-card card-large">
+                            <div class="card-header">
+                                <h3><i class="fas fa-user"></i> About Me</h3>
+                            </div>
+                            <div class="card-content">
+                                <p>Information Science student at VVCE, Mysuru, passionate about building innovative
+                                    technology solutions using AI, IoT, and human-centered design. I am a
+                                    multi-award-winning innovator and patent holder.</p>
+                                <div class="skills-preview">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">C++</span>
+                                    <span class="skill-tag">AI/ML</span>
+                                    <span class="skill-tag">IoT</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cloud Infrastructure Card -->
+                        <div class="dashboard-card">
+                            <div class="card-header">
+                                <h3><i class="fas fa-robot"></i> AI & Innovation</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="cloud-metrics">
+                                    <div class="metric">
+                                        <i class="fas fa-brain"></i>
+                                        <div>
+                                            <span class="metric-value">ML & NLP</span>
+                                            <span class="metric-label">Advanced</span>
+                                        </div>
+                                    </div>
+                                    <div class="metric">
+                                        <i class="fab fa-figma"></i>
+                                        <div>
+                                            <span class="metric-value">UI/UX</span>
+                                            <span class="metric-label">Advanced</span>
+                                        </div>
+                                    </div>
+                                    <div class="metric">
+                                        <i class="fas fa-microchip"></i>
+                                        <div>
+                                            <span class="metric-value">IoT</span>
+                                            <span class="metric-label">Expert</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recent Activity Card -->
+                        <div class="dashboard-card">
+                            <div class="card-header">
+                                <h3><i class="fas fa-chart-line"></i> Recent Activity</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-code-branch"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p>Developed SANTRUPTHI prototype</p>
+                                        <span class="activity-time">Recent</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-server"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p>Filed patent for DHARMAJYOTI</p>
+                                        <span class="activity-time">Recent</span>
+                                    </div>
+                                </div>
+                                <div class="activity-item">
+                                    <div class="activity-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div class="activity-content">
+                                        <p>Won National-Level Hackathon</p>
+                                        <span class="activity-time">Recent</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Performance Metrics Card -->
+                        <div class="dashboard-card">
+                            <div class="card-header">
+                                <h3><i class="fas fa-tachometer-alt"></i> Performance</h3>
+                            </div>
+                            <div class="card-content">
+                                <canvas id="performanceChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Tab -->
+                <div class="tab-pane" id="experience">
+                    <div class="experience-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>AI Intern</h3>
+                                    <span class="company">Launched Global</span>
+                                    <span class="duration">Aug 2025 - Oct 2025</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Built and deployed machine learning workflows using Python to analyze data and
+                                        support decision-making.</p>
+                                    <div class="achievements">
+                                        <div class="achievement">
+                                            <i class="fas fa-brain"></i>
+                                            <span>Developed AI-driven solutions</span>
+                                        </div>
+                                        <div class="achievement">
+                                            <i class="fas fa-check"></i>
+                                            <span>Applied ethical AI practices</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>UX/UI Designer Intern</h3>
+                                    <span class="company">Vital Skills</span>
+                                    <span class="duration">Jun 2025 - Jul 2025</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Designed user-friendly interfaces and workflows for web and mobile applications
+                                        using human-centered design principles.</p>
+                                    <div class="achievements">
+                                        <div class="achievement">
+                                            <i class="fas fa-object-group"></i>
+                                            <span>Created interactive prototypes</span>
+                                        </div>
+                                        <div class="achievement">
+                                            <i class="fas fa-users"></i>
+                                            <span>Improved team collaboration</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Student Coordinator</h3>
+                                    <span class="company">Google & Aspire Institute</span>
+                                    <span class="duration">2025 - Present</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Coordinated key activities and represented student initiatives at large-scale
+                                        technology events.</p>
+                                    <div class="achievements">
+                                        <div class="achievement">
+                                            <i class="fab fa-google"></i>
+                                            <span>Google Student Ambassador</span>
+                                        </div>
+                                        <div class="achievement">
+                                            <i class="fas fa-users"></i>
+                                            <span>Led tech communities</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Tab -->
+                <div class="tab-pane" id="skills">
+                    <div class="skills-dashboard">
+                        <div class="skills-grid">
+                            <div class="skills-card">
+                                <h3><i class="fas fa-robot"></i> AI & Data</h3>
+                                <canvas id="cloudSkillsChart"></canvas>
+                                <div class="skill-tags">
+                                    <span class="skill-tag advanced">Machine Learning</span>
+                                    <span class="skill-tag expert">Python</span>
+                                    <span class="skill-tag intermediate">NLP</span>
+                                    <span class="skill-tag advanced">OpenCV</span>
+                                </div>
+                            </div>
+
+                            <div class="skills-card">
+                                <h3><i class="fas fa-code"></i> Language</h3>
+                                <canvas id="programmingSkillsChart"></canvas>
+                                <div class="skill-tags">
+                                    <span class="skill-tag expert">C++</span>
+                                    <span class="skill-tag expert">Python</span>
+                                    <span class="skill-tag advanced">Java</span>
+                                    <span class="skill-tag intermediate">SQL</span>
+                                </div>
+                            </div>
+
+                            <div class="skills-card">
+                                <h3><i class="fas fa-microchip"></i> IoT & Devices</h3>
+                                <canvas id="frameworksSkillsChart"></canvas>
+                                <div class="skill-tags">
+                                    <span class="skill-tag expert">IoT</span>
+                                    <span class="skill-tag expert">Edge Compute</span>
+                                    <span class="skill-tag advanced">Sensors</span>
+                                    <span class="skill-tag intermediate">Embedded</span>
+                                </div>
+                            </div>
+
+                            <div class="skills-card">
+                                <h3><i class="fas fa-paint-brush"></i> UI/UX Design</h3>
+                                <div class="database-skills">
+                                    <div class="skill-bar">
+                                        <div class="skill-info">
+                                            <span>Figma</span>
+                                            <span>90%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" data-width="90"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-info">
+                                            <span>User Research</span>
+                                            <span>85%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" data-width="85"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-info">
+                                            <span>Prototyping</span>
+                                            <span>80%</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress" data-width="80"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Tab -->
+                <div class="tab-pane" id="projects">
+                    <div class="projects-grid">
+                        <div class="project-card featured">
+                            <div class="project-header">
+                                <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+                                <div class="project-status"><span class="status-badge live">Patent</span></div>
+                            </div>
+                            <div class="project-content">
+                                <h3>SANTRUPTHI</h3>
+                                <p>Assistive Smart Breastfeeding Support System. Sensor-enabled canopy system addressing
+                                    maternal discomfort and privacy.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">IoT</span><span class="tech-tag">Embedded</span><span
+                                        class="tech-tag">Sensors</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-icon"><i class="fas fa-gavel"></i></div>
+                                <div class="project-status"><span class="status-badge live">Patent</span></div>
+                            </div>
+                            <div class="project-content">
+                                <h3>DHARMAJYOTI</h3>
+                                <p>AI-Powered Legal Accessibility Platform simplifying complex legal docs for
+                                    neurodivergent and low-literacy users.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">AI/NLP</span><span class="tech-tag">LegalBERT</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-icon"><i class="fas fa-utensils"></i></div>
+                                <div class="project-status"><span class="status-badge live">Patent</span></div>
+                            </div>
+                            <div class="project-content">
+                                <h3>AAHAR</h3>
+                                <p>AI & IoT-Based Food Safety Detection System to identify harmful chemical adulterants
+                                    in food real-time.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">AI/IoT</span><span class="tech-tag">Edge</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card featured">
+                            <div class="project-header">
+                                <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+                                <div class="project-status"><span class="status-badge live">Patent</span></div>
+                            </div>
+                            <div class="project-content">
+                                <h3>KAVACH AI</h3>
+                                <p>Intelligent Fraud Detection System using behavioral analysis and graph-based
+                                    intelligence for financial security.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">AI</span><span class="tech-tag">Graph Analytics</span><span
+                                        class="tech-tag">ML</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-icon"><i class="fas fa-microphone"></i></div>
+                                <div class="project-status"><span class="status-badge live">Prototype</span></div>
+                            </div>
+                            <div class="project-content">
+                                <h3>JIRYIA</h3>
+                                <p>Voice-First Assistive AI System supporting daily decision-making and accessibility
+                                    enabling natural language interaction.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">AI</span><span class="tech-tag">Voice Rec</span><span
+                                        class="tech-tag">NLP</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-icon"><i class="fas fa-leaf"></i></div>
+                                <div class="project-status"><span class="status-badge live">Patent</span></div>
+                            </div>
+                            <div class="project-content">
+                                <h3>BHOOMI</h3>
+                                <p>AI-Enabled Smart Agriculture Support System providing soil insights, crop yield
+                                    planning recommendations.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">AI</span><span class="tech-tag">IoT</span><span
+                                        class="tech-tag">Data Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="awards">
+                    <div class="education-container">
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="background-color: var(--accent-red)"></div>
+                            <div class="timeline-content">
+                                <h3>5× Patent Holder — Innovations Portfolio</h3>
+                                <div class="timeline-meta">Intellectual Property Authority | 2024–2026</div>
+                                <p>Recognized as an inventor holding 5 utility/design patents for: SANTRUPTHI,
+                                    DHARMAJYOTI, AAHAR, KAVACH, and BHOOMI.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="background-color: var(--accent-green)"></div>
+                            <div class="timeline-content">
+                                <h3>RRP Award 2026 — National Innovation Recognition</h3>
+                                <div class="timeline-meta">Ministry of Corporate Affairs | 2026</div>
+                                <p>Honored for developing innovative technology solutions with significant societal
+                                    impact and recognized among national-level innovators.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="background-color: var(--accent-blue)"></div>
+                            <div class="timeline-content">
+                                <h3>Finalist — ICON 2026 Innovation Competition</h3>
+                                <div class="timeline-meta">Indian Institute of Technology (IIT), Madras | 2026</div>
+                                <p>Selected as a finalist for demonstrating exceptional innovation potential and
+                                    technical excellence.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="background-color: var(--accent-primary)"></div>
+                            <div class="timeline-content">
+                                <h3>Appreciation Letter — Innovation Recognition</h3>
+                                <div class="timeline-meta">ICON Awards | 2026</div>
+                                <p>Received formal recognition for innovation excellence and contribution to impactful
+                                    technology development.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="background-color: var(--accent-red)"></div>
+                            <div class="timeline-content">
+                                <h3>Winner — National-Level Hackathon</h3>
+                                <div class="timeline-meta">Indian Institute of Science (IISc), Bangalore | 2025</div>
+                                <p>Secured 1st place among national teams for delivering a high-impact technical
+                                    solution to a real-world challenge.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="background-color: var(--accent-green)"></div>
+                            <div class="timeline-content">
+                                <h3>Winner — Flip the Case Competition</h3>
+                                <div class="timeline-meta">IUCEE | 2025</div>
+                                <p>Achieved 1st place for presenting an innovative and analytically strong solution to a
+                                    complex problem statement.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="background-color: var(--accent-blue)"></div>
+                            <div class="timeline-content">
+                                <h3>Winner — Founder Pitch Competition</h3>
+                                <div class="timeline-meta">ASPERA | 2025</div>
+                                <p>Won 1st place for proposing a scalable startup concept focused on technology-driven
+                                    innovation.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="background-color: var(--accent-primary)"></div>
+                            <div class="timeline-content">
+                                <h3>3rd Place — Ace the Case Competition</h3>
+                                <div class="timeline-meta">Indian Institute of Technology (IIT), Bombay | 2025</div>
+                                <p>Achieved third place in a prestigious national-level competition demonstrating strong
+                                    problem-solving and innovation skills.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="background-color: var(--accent-red)"></div>
+                            <div class="timeline-content">
+                                <h3>International Representation</h3>
+                                <div class="timeline-meta">IEEE YESIST International Summit, Malaysia | 2025</div>
+                                <p>Represented India on the international stage in Malaysia, presenting an innovative
+                                    technology solution among global participants.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot" style="background-color: var(--accent-green)"></div>
+                            <div class="timeline-content">
+                                <h3>Institutional Incubation Support</h3>
+                                <div class="timeline-meta">VidyaVardhaka College of Engineering (VVCE) | 2025</div>
+                                <p>Received incubation support including mentorship and resources to further develop
+                                    high-impact technology projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="education">
+                    <div class="education-container">
+                        <div class="education-grid">
+                            <div class="education-card">
+                                <div class="education-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <div class="education-content">
+                                    <h3>Bachelor of Engineering in Information Science</h3>
+                                    <p class="institution">VidyaVardhaka College of Engineering</p>
+                                    <p class="duration">2024 - 2028</p>
+                                    <p class="description">Currently pursuing studies with a focus on Artificial
+                                        Intelligence, Machine Learning, and user-centered design. Consistently active in
+                                        innovation circles.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
